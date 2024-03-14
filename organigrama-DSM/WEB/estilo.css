@@ -1,0 +1,958 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 20vh;
+}
+
+.centrado {
+    text-align: center;
+}
+
+@media screen and (max-width: 1280px) {
+    .centrado {
+        width: 90%;
+        margin-left: -8%;
+        /* Ajusta el ancho del div centrado para pantallas más pequeñas */
+    }
+}
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+
+/* Generic styling */
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+.content {
+    width: 200vh;
+    max-width: 4000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 1%;
+    float: left;
+
+}
+
+a:focus {
+    outline: 2px dashed #f7f7f7;
+}
+
+@media screen and (max-width: 767px) {
+    .content {
+        padding: 0 20px;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul a {
+    display: block;
+    background: #bebebe;
+    border: 4px solid #000000;
+    text-align: center;
+    overflow: hidden;
+    font-size: .25 vh;
+    text-decoration: none;
+    font-weight: bold;
+    width: 35vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    height: 70px;
+    margin-bottom: -26px;
+    box-shadow: 4px 4px 9px -4px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all linear .1s;
+    -moz-transition: all linear .1s;
+    transition: all linear .1s;
+}
+
+@media print {
+    ul a {
+        border: 4px solid #000;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    ul a {
+        font-size: 1em;
+    }
+}
+
+
+ul a span {
+    top: 50%;
+    margin-top: -0.7em;
+    display: block;
+}
+
+/*
+ 
+ */
+
+.org-completo>li>a {
+    margin-bottom: 25px;
+}
+
+.cargo-principal>li>a {
+    width: 50%;
+    margin: 0 auto 0px auto;
+}
+
+.cargo-segundario:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 130px;
+    background: rgb(0, 0, 0);
+    border-left: 4px solid #000000;
+    left: 49.9%;
+    position: relative;
+}
+
+@media print {
+    .cargo-segundario:after {
+        border-left: 4px solid #000;
+    }
+}
+
+.cargo-segundario,
+.departmentos {
+    position: absolute;
+    width: 100%;
+}
+
+.cargo-segundario>li:first-child,
+.departmentos>li:first-child {
+    width: 18.59894921190893%;
+    height: 64px;
+    margin: 0 auto 92px auto;
+    padding-top: 25px;
+    border-bottom: 4px solid rgb(0, 0, 0);
+    z-index: 1;
+}
+
+@media print {
+
+    .cargo-segundario>li:first-child,
+    .departmentos>li:first-child {
+        border-bottom: 4px solid #000;
+    }
+}
+
+.cargo-segundario>li:first-child {
+    float: right;
+    right: 27.2%;
+    border-left: 4px solid rgb(0, 0, 0);
+}
+
+@media print {
+    .cargo-segundario>li:first-child {
+        border-left: 4px solid black;
+    }
+}
+
+.departmentos>li:first-child {
+    float: left;
+    left: 27.2%;
+    border-right: 4px solid rgb(0, 0, 0);
+}
+
+@media print {
+    .departmentos>li:first-child {
+        border-right: 4px solid black;
+    }
+}
+
+.cargo-segundario>li:first-child a,
+.departmentos>li:first-child a {
+    width: 100%;
+}
+
+.cargo-segundario>li:first-child a {
+    left: 25px;
+}
+
+@media screen and (max-width: 767px) {
+
+    .cargo-segundario>li:first-child,
+    .departmentos>li:first-child {
+        width: 40%;
+    }
+
+    .cargo-segundario>li:first-child {
+        right: 10%;
+        margin-right: 2px;
+    }
+
+    .cargo-segundario:after {
+        left: 49.8%;
+    }
+
+    .departmentos>li:first-child {
+        left: 10%;
+        margin-left: 2px;
+    }
+}
+
+
+.departmentos>li:first-child a {
+    right: 25px;
+}
+
+.departmento:first-child,
+.departmentos li:nth-child(2) {
+    margin-left: 0;
+    clear: left;
+}
+
+.departmentos:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 81.1%;
+    height: 22px;
+    border-top: 6.5px solid #000000;
+    border-right: 4px solid #000000;
+    border-left: 4px solid #000000;
+    margin: 0 auto;
+    top: 130px;
+    left: 9.1%
+}
+
+@media print {
+    .departmentos:after {
+        border-top: 4px solid #000;
+        border-right: 4px solid #000;
+        border-left: 4px solid #000;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .departmentos:after {
+        border-right: none;
+        left: 0;
+        width: 49.8%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .departmento:first-child:before,
+    .departmento:last-child:before {
+        border: none;
+    }
+}
+
+.departmento:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 22px;
+    border-left: 4px solid rgb(0, 0, 0);
+    z-index: 1;
+    top: -22px;
+    left: 50%;
+    margin-left: -4px;
+}
+
+@media print {
+    .departmento:before {
+        border-left: 4px solid black;
+    }
+}
+
+.departmento {
+    border-left: 4px solid #000000;
+    width: 18.59894921190893%;
+    float: left;
+    margin-left: 1.751313485113835%;
+    margin-bottom: 60px;
+}
+
+@media print {
+    .departmento {
+        border-left: 4px solid #000;
+    }
+}
+
+.lt-ie8 .departmento {
+    width: 18.25%;
+}
+
+@media screen and (max-width: 767px) {
+    .departmento {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .departmento:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 60px;
+        border-left: 4px solid rgb(0, 0, 0);
+        z-index: 1;
+        top: -60px;
+        left: 0%;
+        margin-left: -4px;
+    }
+
+    .departmento:nth-child(2):before {
+        display: none;
+    }
+}
+
+.departmento>a {
+    margin: 0 0 -26px -4px;
+    z-index: 1;
+}
+
+.departmento>a:hover {
+    height: 80px;
+}
+
+.departmento>ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.departmento li {
+    padding-left: 25px;
+    border-bottom: 4px solid #000000;
+    height: 80px;
+}
+
+@media print {
+    .departmento li {
+        border-bottom: 4px solid #000;
+    }
+}
+
+.departmento li a {
+    background: #000000;
+    top: 48px;
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    height: 60px;
+    vertical-align: middle;
+    right: -1px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIiBzdG9wLW9wYWNpdHk9IjAuMjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background-image: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important;
+    background-image: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important;
+    background-image: -o-linear-gradient(-45deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important;
+    background-image: -ms-linear-gradient(-45deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#40000000', endColorstr='#00000000', GradientType=1);
+}
+
+.departmento li a:hover {
+    box-shadow: 8px 8px 9px -4px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    width: 95%;
+    top: 39px;
+    background-image: none !important;
+}
+
+/* Department/ section colors */
+.departmento.dep-a a {
+    background: #ffdb28;
+}
+
+.departmento.dep-b a {
+    background: #AAD4E7;
+}
+
+.departmento.dep-c a {
+    background: #FDB0FD;
+}
+
+.departmento.dep-d a {
+    background: #5cdb5c;
+}
+
+.departmento.dep-e a {
+    background: #ff7700;
+}
+
+
+
+
+/* ventana emergente */
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.close {
+    background: #737373;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+    background: #ff0000;
+}
+
+/* final ventana emergente 1*/
+
+
+/* ventana emergente 2*/
+.modalDialog2 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog2 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog2:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog2>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+.close:hover {
+    background: #ff0000;
+}
+
+/* final ventana emergente 2*/
+
+
+
+/* ventana emergente 3*/
+
+.modalDialog3 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog3 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog3:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog3>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* final ventana emergente 3*/
+
+
+
+/* ventana emergente 4*/
+
+.modalDialog4 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog4 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog4:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog4>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* final ventana emergente 4*/
+
+
+
+/* ventana emergente 5*/
+
+.modalDialog5 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog5 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog5:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog5>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* final ventana emergente 5*/
+
+
+
+/* ventana emergente 6*/
+
+.modalDialog6 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog6 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog6:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog6>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* final ventana emergente 6*/
+
+
+/* ventana emergente 7*/
+
+.modalDialog7 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog7 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog7:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog7>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* final ventana emergente 7*/
+
+
+
+/* ventana emergente 8*/
+
+.modalDialog8 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog8 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog8:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog8>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* final ventana emergente 8*/
+
+
+
+/* ventana emergente 9*/
+
+.modalDialog9 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog9 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog9:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog9>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* final ventana emergente 9*/
+
+
+
+
+.text-modal {
+    margin-top: 5%;
+    width: 850px;
+    height: 300px;
+    overflow: auto;
+    border: 2px solid #000000;
+    padding: 10px;
+    font-weight: bold;
+    background-color: aliceblue;
+}
+
+.tarjeta-modal {
+    float: left;
+    margin-right: 50px;
+}
+
+.textoImagen {
+    margin-top: 6%;
+}
+
+.textoImagen h4 {
+    margin-left: 12%;
+    font-family: sans-serif;
+    font-size: 150%;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.textoImagen h5 {
+    margin-left: 12%;
+}
+
+
+.textoImagen hr {
+    width: 45vh;
+    border: 0;
+    border-top: 3px solid black;
+}
+
+.tarjetaImg {
+    background-color: aliceblue;
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 1200px) {
+    .modalDialog>div {
+        width: 80%;
+        /* Cambiado a porcentaje para que sea responsive */
+        max-width: 80%;
+        /* Establece un ancho máximo */
+        max-height: 80%;
+        margin: 10% auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .tarjetaImg {
+        width: 70%;
+        /* Cambiado a porcentaje para que sea responsive */
+        max-width: 70%;
+        /* Establece un ancho máximo */
+        max-height: 15%;
+        margin-left: 10%;
+
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .textoImagen h4,
+    h5 {
+
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .textoImagen hr {
+
+        width: 43vh;
+        border: 0;
+        border-top: 3px solid black;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .text-modal {
+        width: 70%;
+        /* Cambiado a porcentaje para que sea responsive */
+        max-width: 70%;
+        /* Establece un ancho máximo */
+        max-height: 30%;
+        margin-left: 10%;
+        overflow: auto;
+
+
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .text-modal p {
+        font-size: 15px;
+
+
+    }
+}
