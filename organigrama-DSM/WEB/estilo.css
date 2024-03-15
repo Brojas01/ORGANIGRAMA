@@ -845,6 +845,50 @@ ul a span {
 
 /* final ventana emergente 9*/
 
+/* ventana emergente 10*/
+
+.modalDialog10 {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -13%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    overflow: auto;
+}
+
+.modalDialog10 h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.modalDialog10:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog10>div {
+    width: 900px;
+    height: 700px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #9a9cff;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+}
+
+/* final ventana emergente 10*/
+
 
 
 
